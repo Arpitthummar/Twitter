@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="183" id="KGk-i7-Jjw" customClass="FollowingTableViewCell" customModule="Twitter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="510" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvj-aw-gTI">
+                        <rect key="frame" x="110" y="40.333333333333336" width="380" height="30.000000000000007"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="1Y1-LE-d6m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PNl-y5-q7v">
+                        <rect key="frame" x="104.99999999999999" y="14.999999999999998" width="239.66666666666663" height="20.333333333333329"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVL-TU-obu">
+                                <rect key="frame" x="0.0" y="0.0" width="193.33333333333334" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej6-r3-MwN">
+                                <rect key="frame" x="198.33333333333331" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.329999999999998" id="VAk-eJ-mrr"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3M5-98-LeW">
+                        <rect key="frame" x="15" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="pxb-5G-ap8"/>
+                            <constraint firstAttribute="width" constant="80" id="tzj-aQ-OV8"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="8PC-mK-hK4">
+                        <rect key="frame" x="50" y="90.333333333333329" width="450" height="35.666666666666671"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-97-Cpv">
+                                <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="35.666666666666664"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="comment" title=" 4.3k">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                    <color key="baseForegroundColor" red="0.69803923369999998" green="0.7019608021" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDE-Iy-iru">
+                                <rect key="frame" x="112.66666666666666" y="0.0" width="112.33333333333334" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="retweet" title=" 3.2k">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.69803923369999998" green="0.7019608021" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-UC-cTe">
+                                <rect key="frame" x="224.99999999999997" y="0.0" width="112.66666666666666" height="34.333333333333336"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" title=" 37.2k">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.69803923369999998" green="0.7019608021" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plL-6O-q1U">
+                                <rect key="frame" x="337.66666666666669" y="0.0" width="112.33333333333331" height="35.666666666666664"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="views" title=" 6.3M">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                    <color key="baseForegroundColor" red="0.69803923369999998" green="0.7019608021" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35.670000000000002" id="Huh-DN-pk3"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3M5-98-LeW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="B7Z-c8-day"/>
+                    <constraint firstAttribute="trailing" secondItem="8PC-mK-hK4" secondAttribute="trailing" constant="10" id="Jay-00-fgY"/>
+                    <constraint firstAttribute="trailing" secondItem="PNl-y5-q7v" secondAttribute="trailing" constant="165.33000000000001" id="OaW-WY-mDB"/>
+                    <constraint firstItem="8PC-mK-hK4" firstAttribute="top" secondItem="bvj-aw-gTI" secondAttribute="bottom" constant="20" id="SzN-iD-6QM"/>
+                    <constraint firstItem="bvj-aw-gTI" firstAttribute="leading" secondItem="3M5-98-LeW" secondAttribute="trailing" constant="15" id="WFW-FY-jqn"/>
+                    <constraint firstItem="3M5-98-LeW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fqs-ME-i8o"/>
+                    <constraint firstItem="8PC-mK-hK4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="gP3-Ee-EfL"/>
+                    <constraint firstItem="PNl-y5-q7v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="lAN-iD-eZF"/>
+                    <constraint firstItem="PNl-y5-q7v" firstAttribute="leading" secondItem="3M5-98-LeW" secondAttribute="trailing" constant="10" id="wp1-me-Qgz"/>
+                    <constraint firstItem="bvj-aw-gTI" firstAttribute="top" secondItem="PNl-y5-q7v" secondAttribute="bottom" constant="5" id="xKa-kE-sb4"/>
+                    <constraint firstAttribute="trailing" secondItem="bvj-aw-gTI" secondAttribute="trailing" constant="20" id="zIa-Hp-sye"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="GVL-TU-obu" id="ozk-WJ-06R"/>
+                <outlet property="profileImageView" destination="3M5-98-LeW" id="WgM-w7-Sdc"/>
+                <outlet property="subNameLabel" destination="ej6-r3-MwN" id="waE-VI-Um5"/>
+                <outlet property="tweetLabel" destination="bvj-aw-gTI" id="WfE-iT-P7E"/>
+            </connections>
+            <point key="canvasLocation" x="296.18320610687022" y="92.605633802816911"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment" width="20" height="20"/>
+        <image name="heart" width="20" height="20"/>
+        <image name="retweet" width="20" height="20"/>
+        <image name="views" width="20" height="20"/>
+    </resources>
+</document>
