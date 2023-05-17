@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,18 +54,18 @@
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="8PC-mK-hK4">
-                        <rect key="frame" x="50" y="90.333333333333329" width="450" height="35.666666666666671"/>
+                        <rect key="frame" x="50" y="90.333333333333329" width="460" height="35.666666666666671"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-97-Cpv">
-                                <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="35.666666666666664"/>
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="comment" title=" 4.3k">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                     <color key="baseForegroundColor" red="0.69803923369999998" green="0.7019608021" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDE-Iy-iru">
-                                <rect key="frame" x="112.66666666666666" y="0.0" width="112.33333333333334" height="34"/>
+                                <rect key="frame" x="115" y="0.0" width="115" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="retweet" title=" 3.2k">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
@@ -73,18 +73,18 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-UC-cTe">
-                                <rect key="frame" x="224.99999999999997" y="0.0" width="112.66666666666666" height="34.333333333333336"/>
+                                <rect key="frame" x="230" y="0.0" width="115" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="heart" title=" 37.2k">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                     <color key="baseForegroundColor" red="0.69803923369999998" green="0.7019608021" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plL-6O-q1U">
-                                <rect key="frame" x="337.66666666666669" y="0.0" width="112.33333333333331" height="35.666666666666664"/>
+                                <rect key="frame" x="345" y="0.0" width="115" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="views" title=" 6.3M">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                     <color key="baseForegroundColor" red="0.69803923369999998" green="0.7019608021" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
@@ -96,7 +96,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="3M5-98-LeW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="B7Z-c8-day"/>
-                    <constraint firstAttribute="trailing" secondItem="8PC-mK-hK4" secondAttribute="trailing" constant="10" id="Jay-00-fgY"/>
+                    <constraint firstAttribute="trailing" secondItem="8PC-mK-hK4" secondAttribute="trailing" id="Jay-00-fgY"/>
                     <constraint firstAttribute="trailing" secondItem="PNl-y5-q7v" secondAttribute="trailing" constant="165.33000000000001" id="OaW-WY-mDB"/>
                     <constraint firstItem="8PC-mK-hK4" firstAttribute="top" secondItem="bvj-aw-gTI" secondAttribute="bottom" constant="20" id="SzN-iD-6QM"/>
                     <constraint firstItem="bvj-aw-gTI" firstAttribute="leading" secondItem="3M5-98-LeW" secondAttribute="trailing" constant="15" id="WFW-FY-jqn"/>

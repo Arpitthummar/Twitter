@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3b-7e-qys">
                         <rect key="frame" x="20" y="10" width="300" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="cAc-mb-mXg"/>
+                            <constraint firstAttribute="height" constant="25" id="Lug-Nb-jmV"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -29,7 +29,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-2c-trd">
                         <rect key="frame" x="20" y="42" width="300" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="BBD-AC-OH3"/>
+                            <constraint firstAttribute="height" constant="25" id="qNY-P8-hfP"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -37,24 +37,22 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQM-6w-O1K">
                         <rect key="frame" x="20" y="74" width="300" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="25" id="iMr-UZ-P5F"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9ca-2c-trd" firstAttribute="top" secondItem="p3b-7e-qys" secondAttribute="bottom" constant="7" id="DxP-Mf-kLm"/>
-                    <constraint firstAttribute="trailing" secondItem="p3b-7e-qys" secondAttribute="trailing" constant="20" id="EoJ-M3-3N7"/>
-                    <constraint firstItem="mQM-6w-O1K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FKT-EB-WqU"/>
-                    <constraint firstAttribute="trailing" secondItem="mQM-6w-O1K" secondAttribute="trailing" constant="20" id="FSZ-J9-amV"/>
-                    <constraint firstItem="9ca-2c-trd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="O0U-Fe-F9P"/>
-                    <constraint firstItem="p3b-7e-qys" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="QYk-GO-SLN"/>
-                    <constraint firstItem="mQM-6w-O1K" firstAttribute="top" secondItem="9ca-2c-trd" secondAttribute="bottom" constant="7" id="dab-lQ-Fre"/>
-                    <constraint firstItem="p3b-7e-qys" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jvy-a9-bBf"/>
-                    <constraint firstAttribute="trailing" secondItem="9ca-2c-trd" secondAttribute="trailing" constant="20" id="xK6-uG-61N"/>
+                    <constraint firstAttribute="trailing" secondItem="9ca-2c-trd" secondAttribute="trailing" constant="20" id="F7w-QH-Dc6"/>
+                    <constraint firstItem="mQM-6w-O1K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="GA1-N9-rb5"/>
+                    <constraint firstItem="9ca-2c-trd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="P0c-SI-CbF"/>
+                    <constraint firstAttribute="bottom" secondItem="mQM-6w-O1K" secondAttribute="bottom" constant="20" id="PPe-VG-N0W"/>
+                    <constraint firstItem="p3b-7e-qys" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Zc4-cf-QST"/>
+                    <constraint firstItem="9ca-2c-trd" firstAttribute="top" secondItem="p3b-7e-qys" secondAttribute="bottom" constant="7" id="cmM-0m-j7z"/>
+                    <constraint firstAttribute="trailing" secondItem="mQM-6w-O1K" secondAttribute="trailing" constant="20" id="hfP-wb-ya3"/>
+                    <constraint firstItem="p3b-7e-qys" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oOl-gz-S2Y"/>
+                    <constraint firstItem="mQM-6w-O1K" firstAttribute="top" secondItem="9ca-2c-trd" secondAttribute="bottom" constant="7" id="urR-gG-Xqa"/>
+                    <constraint firstAttribute="trailing" secondItem="p3b-7e-qys" secondAttribute="trailing" constant="20" id="zFo-zI-gjG"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -11,6 +11,7 @@ class SpacesViewController: UIViewController {
    
 //MARK: - OUTLETS AND VARIABLES
     @IBOutlet weak var lineLabel: UILabel!
+    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     var arrHosts: [SpaceHosters] = []
     var numberOfItemInRow: Int = 1
@@ -19,8 +20,16 @@ class SpacesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        setUp()
+        setSideMenu()
     }
 //MARK: - FUNCTIONS
+    private func setSideMenu() {
+        if self.revealViewController() != nil {
+            profileButton.addTarget(self.revealViewController(), action: #selector(self.revealViewController().revealToggle(_:)), for: .touchUpInside)
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    
     private func setUp(){
         registerCollectionViewCell()
         loadHostsData()
@@ -32,6 +41,11 @@ class SpacesViewController: UIViewController {
     }
     private func loadHostsData(){
         arrHosts = [SpaceHosters(time: "LIVE", spaceName: "#Deva Deva", hostName: "Arijit Singh", hostBio: "singer",listening: "3.2M listening "),SpaceHosters(time: "10 : 00 PM", spaceName: "#Creepin'", hostName: "The Weeknd", hostBio: "pop artist",listening: "123k listening")]
+    }
+    
+    @IBAction func profileButtonAction(_ sender: UIButton) {
+        let profileViewController = storyboard?.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
+        navigationController?.pushViewController(profileViewController, animated: true)
     }
 }
 //MARK: - COLLECTIONVIEW METHODS

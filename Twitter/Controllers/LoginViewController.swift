@@ -14,8 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var forgorPassworButton: UIButton!
-    
-//MARK: - APP LIFE CYCLE
+    @IBOutlet weak var lineLabel: UILabel!
+    //MARK: - APP LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         setCornerRadius(view: forgorPassworButton, cornerRadius: 15, borderWidth: 0.5)
@@ -28,6 +28,8 @@ class LoginViewController: UIViewController {
         view.layer.borderWidth = borderWidth
         loginButton.layer.cornerRadius = 15
         forgorPassworButton.layer.borderColor = UIColor.lightGray.cgColor
+       lineLabel.layer.borderColor = UIColor.gray.cgColor
+       lineLabel.layer.borderWidth = 1
     }
    
   private func setUp(){

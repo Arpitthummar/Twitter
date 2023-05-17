@@ -17,4 +17,9 @@ class NotificationViewController: UIViewController {
         let notificationSettingsViewController = storyboard?.instantiateViewController(withIdentifier: "NotificationSettingsViewController") as! NotificationSettingsViewController
         navigationController?.pushViewController(notificationSettingsViewController, animated: true)
     }
+    @IBAction func profileButtonAction(_ sender: UIButton) {
+        let profileViewController = storyboard?.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
+        navigationController?.pushViewController(profileViewController, animated: true)
+    }
+    
 }

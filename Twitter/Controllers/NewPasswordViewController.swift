@@ -11,6 +11,7 @@ class NewPasswordViewController: UIViewController {
 //MARK: - OUTLETS
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var lineLabel: UILabel!
     @IBOutlet weak var newPasswordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,8 @@ class NewPasswordViewController: UIViewController {
     func setCornerRadius(view: UIView,radius: CGFloat){
         view.layer.masksToBounds = true
         view.layer.cornerRadius = radius
+        lineLabel.layer.borderColor = UIColor.gray.cgColor
+        lineLabel.layer.borderWidth = 1
     }
     private func displayValidation(massage: String){
         let alert: UIAlertController = UIAlertController(title: "Error", message: massage, preferredStyle: .alert)

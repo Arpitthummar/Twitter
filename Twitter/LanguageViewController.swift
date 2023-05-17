@@ -12,7 +12,8 @@ class LanguageViewController: UIViewController {
 //MARK: - OUTLETS AND VARIABLES
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
-        var selectedIndex: Int = -1
+    @IBOutlet weak var lineLabel: UILabel!
+    var selectedIndex: Int = -1
     var arrLanguage: [String] = ["English","Bangla","Gujarati","Hindi","Kannada","Malayalam","Marathi","Nepali","Punjabi","Urdu","Chinese"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,8 @@ class LanguageViewController: UIViewController {
     }
 //MARK: - FUNCTION AND BUTTON ACTION
     func ragisterTableViewCell(){
+        lineLabel.layer.borderColor = UIColor.gray.cgColor
+        lineLabel.layer.borderWidth = 1
         tableView.register(UINib(nibName: "LanguageTableViewCell", bundle: nil), forCellReuseIdentifier: "LanguageTableViewCell")
         tableView.separatorStyle = .none
     }

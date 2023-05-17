@@ -9,19 +9,22 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-//MARK: - OUTLETS
+    //MARK: - OUTLETS
     @IBOutlet weak var settingButton: UIButton!
     @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var firstContainer: UIView!
     @IBOutlet weak var secondContainer: UIView!
     @IBOutlet weak var thirdContainer: UIView!
     @IBOutlet weak var fourthContainer: UIView!
+    @IBOutlet weak var profileButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         handleContainerViewBasedOnSelection(index: 0)
+        
     }
-//MARK: - FUNCTION
+    //MARK: - FUNCTION
     private func handleContainerViewBasedOnSelection(index: Int) {
         switch index {
         case 0:
@@ -47,7 +50,13 @@ class SearchViewController: UIViewController {
         default: break
         }
     }
-//MARK: - BUTTON AND SEGMENTEDCONTROL ACTION
+    private func setSideMenu() {
+        if self.revealViewController() != nil {
+            profileButton.addTarget(self.revealViewController(), action: #selector(self.revealViewController().revealToggle(_:)), for: .touchUpInside)
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    //MARK: - BUTTON AND SEGMENTEDCONTROL ACTION
     @IBAction func segmentAction(_ sender: UISegmentedControl) {
         handleContainerViewBasedOnSelection(index: sender.selectedSegmentIndex)
     }
@@ -58,8 +67,7 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func profileButtonAction(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let profileViewController: ProfileViewController = storyBoard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        let profileViewController = storyboard?.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
         navigationController?.pushViewController(profileViewController, animated: true)
     }
 }

@@ -10,17 +10,24 @@ import UIKit
 class SuggestionViewController: UIViewController {
     
 // MARK: - Outlets and variables
-    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
+   
+
     var arrOfUsers: [UserInformation] = []
-    var arrOfImages: [String] = ["arijit"]
+    var arrOfImages: [String] = ["arijit","musk","scout","weeknd","neymar"]
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDataIntoArrUser()
     }
     private func loadDataIntoArrUser(){
         collectionView.register(UINib(nibName: SuggetionForYouCollectionViewCell.nibName, bundle: nil), forCellWithReuseIdentifier: SuggetionForYouCollectionViewCell.identifier)
-        arrOfUsers = [UserInformation(name: "Arijit Singh", subName: "@arijitsingh")]
+        arrOfUsers = [UserInformation(name: "Arijit Singh", subName: "@arijitsingh"),
+                      UserInformation(name: "Elon Musk", subName: "@elonmusk"),
+                      UserInformation(name: "scOutOP", subName: "@scouttanmay"),
+                      UserInformation(name: "The Weeknd", subName: "@theweeknd"),
+                      UserInformation(name: "Neymar Jr", subName: "@neymarjr")]
     }
+   
 }
 // MARK: - CollectionView Methods
 extension SuggestionViewController: UICollectionViewDelegate, UICollectionViewDataSource{

@@ -10,6 +10,7 @@ import UIKit
 class ForgotPasswordViewController: UIViewController {
     
 //MARK: - OUTLETS
+    @IBOutlet weak var lineLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
     override func viewDidLoad() {
@@ -20,6 +21,8 @@ class ForgotPasswordViewController: UIViewController {
     func setCornerRadius(view: UIView,radius: CGFloat){
         view.layer.masksToBounds = true
         view.layer.cornerRadius = radius
+        lineLabel.layer.borderColor =  UIColor.gray.cgColor
+        lineLabel.layer.borderWidth = 1
     }
    
     private func setUp(){

@@ -15,6 +15,7 @@ class SuggetionForYouCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var subNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        followButton.setTitle("Follow", for: .normal)
         followButton.layer.masksToBounds = true
         followButton.layer.cornerRadius = 15
         followButton.layer.borderWidth = 1

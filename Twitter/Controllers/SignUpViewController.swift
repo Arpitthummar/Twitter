@@ -10,6 +10,7 @@ import UIKit
 class SignUpViewController: UIViewController {
     
 //MARK: - OUTLETS
+    @IBOutlet weak var lineLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet var nextButtonTab: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
@@ -19,6 +20,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadFunctions()
+        setDatePicker()
     }
 //MARK: - BUTTON ACTION
     @IBAction func nextButtonAction(_ sender: UIButton) {
@@ -28,7 +30,8 @@ class SignUpViewController: UIViewController {
     }
 //MARK: - FUNCTIONS
     private func loadFunctions(){
-        setDatePicker()
+        lineLabel.layer.borderColor = UIColor.gray.cgColor
+        lineLabel.layer.borderWidth = 1
         dateOfBirthTextField.delegate = self
         datePicker.isHidden = true
         setCornerRadius(view: nextButtonTab, radius: 15)

@@ -10,12 +10,12 @@ import UIKit
 class FirstPageViewController: UIViewController {
   
 //MARK: - OUTLETS
-    @IBOutlet var labelTwo: UIView!
+    @IBOutlet var labelTwo: UILabel!
     @IBOutlet weak var googleButton: UIButton!
-    @IBOutlet weak var labelOne: UILabel!
     @IBOutlet weak var createAccountButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelTwo.layer.borderWidth = 1
         [googleButton,createAccountButton].forEach {
             setCornerRadius(view: $0, cornerRadius: 15,borderWidth: 0.5)
         }

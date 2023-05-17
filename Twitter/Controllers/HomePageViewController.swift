@@ -13,7 +13,14 @@ class HomePageViewController: UIViewController {
     @IBOutlet weak var labelOne: UILabel!
     @IBOutlet weak var firstContainView: UIView!
     @IBOutlet weak var secondContainView: UIView!
-    @IBOutlet weak var prifileButton: UIButton!
+    @IBOutlet weak var profileButton: UIButton!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       // revealViewController().setFront(self, animated: true)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
       setUp()
@@ -21,6 +28,10 @@ class HomePageViewController: UIViewController {
     }
 //MARK: - FUNCTIONS
     private func setUp(){
+        if self.revealViewController() != nil {
+            profileButton.addTarget(self.revealViewController(), action: #selector(self.revealViewController().revealToggle(_:)), for: .touchUpInside)
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         labelOne.layer.borderWidth = 1
         labelOne.layer.borderColor = UIColor.systemGray.cgColor
     }
@@ -41,7 +52,7 @@ class HomePageViewController: UIViewController {
     }
     
     @IBAction func profileButtonActionTab(_ sender: UIButton) {
-      
+        //performSegue(withIdentifier: "home", sender: nil)
     }
 }
 

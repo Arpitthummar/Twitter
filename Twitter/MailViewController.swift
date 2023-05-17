@@ -12,7 +12,8 @@ class MailViewController: UIViewController {
 //MARK: - OUTLETS
     @IBOutlet weak var mailButton: UIButton!
     @IBOutlet weak var settingButton: UIButton!
-    @IBOutlet weak var barButton: UIBarButtonItem!
+  
+    @IBOutlet weak var profileButtonAction: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -20,18 +21,16 @@ class MailViewController: UIViewController {
     private func setUp(){
         mailButton.layer.masksToBounds = true
         mailButton.layer.cornerRadius = 15
-        if self.revealViewController() != nil {
-            barButton.target = self.revealViewController()
-            barButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+        
     }
     @IBAction func settingButtonAction(_ sender: UIButton){
         let mailSettingViewController = storyboard?.instantiateViewController(withIdentifier: "MailSettingViewController") as! MailSettingViewController
         navigationController?.pushViewController(mailSettingViewController, animated: true)
     }
 
-    @IBAction func barButtonAction(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "mail", sender: nil)
+    @IBAction func profileButtonTasb(_ sender: UIButton) {
+        let profileViewController = storyboard?.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
+        navigationController?.pushViewController(profileViewController, animated: true)
     }
+    
 }
